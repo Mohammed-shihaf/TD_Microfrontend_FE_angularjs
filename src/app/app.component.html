@@ -1,0 +1,5 @@
+<h1>{{ title }}</h1>
+<p>{{ widgets.length }} widgets ({{ countLabel() }})</p>
+<app-widget-list [widgets]="widgets" [selectedId]="selectedId" (select)="select($event)"></app-widget-list>
+<app-widget-detail [widget]="selectedWidget()"></app-widget-detail>
+<app-remotes-panel [remotes]="remotes"></app-remotes-panel>
